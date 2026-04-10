@@ -1,5 +1,6 @@
 package com.example.aliya_apps.pertemuan_3
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -32,6 +33,9 @@ class ThirdActivity : AppCompatActivity() {
             Log.e("Klik btnKirim","Tombol berhasil di tekan. Isi dari inputNama = $nama")
 
             Toast.makeText(this, "Pesan berhasil dikirim ke : $nama" , Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this, ThirdResultActivity::class.java)
+            startActivity(intent)
         }
     }
 }
