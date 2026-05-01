@@ -33,5 +33,25 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("usia", 25)
             startActivity(intent)
         }
+
+        binding.btnLogout.setOnClickListener {
+            androidx.appcompat.app.AlertDialog.Builder(this)
+                .setTitle("Logout")
+                .setMessage("Apakah Anda yakin ingin logout?")
+                .setPositiveButton("Ya") { dialog, _ ->
+                    val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
+                    val editor = sharedPref.edit()
+                    editor.clear()
+                    editor.apply()
+
+                    dialog.dismiss()
+
+                    val intent = Intent(this, AuthActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                }
+                .setNegativeButton("Tidak", null)
+                .show()
+        }
     }
 }
