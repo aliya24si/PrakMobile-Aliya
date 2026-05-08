@@ -1,13 +1,10 @@
-package com.example.aliya_apps.pertemuan_5
+package com.example.aliya_apps.Home.pertemuan_5
 
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.aliya_apps.R
 import com.example.aliya_apps.databinding.ActivityFifthBinding // Pastikan import ini ada
 import android.content.Intent
