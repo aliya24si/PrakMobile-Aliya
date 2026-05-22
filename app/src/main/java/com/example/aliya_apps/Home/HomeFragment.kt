@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.aliya_apps.AuthActivity
 import com.example.aliya_apps.Home.pertemuan_4.FourthActivity
 import com.example.aliya_apps.Home.pertemuan_7.SeventhActivity
+import com.example.aliya_apps.Home.pertemuan_9.NinthActivity
 import com.example.aliya_apps.R
 import com.example.aliya_apps.databinding.FragmentHomeBinding
 
@@ -46,6 +47,11 @@ class HomeFragment : Fragment() {
         binding.btnToSeventh.setOnClickListener {
 
             val intent = Intent(requireContext(), SeventhActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnToNinth.setOnClickListener {
+            val intent = Intent(requireContext(), NinthActivity::class.java)
             startActivity(intent)
         }
 
