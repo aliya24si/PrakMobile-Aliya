@@ -9,12 +9,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aliya_apps.AuthActivity
-import com.example.aliya_apps.Home.pertemuan_2.SecondActivity // Import baru
-import com.example.aliya_apps.Home.pertemuan_3.ThirdActivity  // Import baru
+import com.example.aliya_apps.Home.pertemuan_2.SecondActivity
+import com.example.aliya_apps.Home.pertemuan_3.ThirdActivity
 import com.example.aliya_apps.Home.pertemuan_4.FourthActivity
-import com.example.aliya_apps.Home.pertemuan_5.FifthActivity  // Import baru
+import com.example.aliya_apps.Home.pertemuan_5.FifthActivity
 import com.example.aliya_apps.Home.pertemuan_7.SeventhActivity
 import com.example.aliya_apps.Home.pertemuan_9.NinthActivity
+import com.example.aliya_apps.Home.pertemuan_10.TenthActivity // Import Baru
 import com.example.aliya_apps.R
 import com.example.aliya_apps.databinding.FragmentHomeBinding
 
@@ -74,6 +75,12 @@ class HomeFragment : Fragment() {
         // --- Navigasi ke Pertemuan 9 ---
         binding.btnToNinth.setOnClickListener {
             val intent = Intent(requireContext(), NinthActivity::class.java)
+            startActivity(intent)
+        }
+
+        // --- Navigasi ke Pertemuan 10 (Baru) ---
+        binding.btnToTenth.setOnClickListener {
+            val intent = Intent(requireContext(), TenthActivity::class.java)
             startActivity(intent)
         }
 
