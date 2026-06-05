@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background">#ABF</color>
     <color name="warna_btn">#E07878</color>
+    <color name="abu_gelap">#565656</color>
 </resources>
