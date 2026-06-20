@@ -26,6 +26,7 @@ import com.example.aliya_apps.data.api.CatFactApiClient
 import com.example.aliya_apps.data.api.PhotoApiClient
 import com.example.aliya_apps.databinding.FragmentHomeBinding
 import kotlinx.coroutines.launch
+import com.example.aliya_apps.Home.pertemuan_13.ThirteenthActivity
 
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
@@ -89,6 +90,11 @@ class HomeFragment : Fragment() {
         // --- Navigasi ke Pertemuan 10 (Baru) ---
         binding.btnToTenth.setOnClickListener {
             val intent = Intent(requireContext(), TenthActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnToThirteenth.setOnClickListener {
+            val intent = Intent(requireContext(), ThirteenthActivity::class.java)
             startActivity(intent)
         }
 
